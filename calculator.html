@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="icon" href="icon.png" type="image/png">
+  <script src="https://kit.fontawesome.com/30fecdcfd1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+  <div class="calculator">
+    <div class="output"><input type="text" id="display" pattern="[0-9+\-*/.]*" required autocomplete="off"></div>
+    <div class="buttons">
+      <button id="buttonAllClear" onclick="clearDisplay()">AC</button>
+      <button id="buttonDivide" onclick="appendToDisplay('/')">/</button>
+      <button id="buttonMultiply" onclick="appendToDisplay('*')">*</button>
+      <button id="buttonClear" onclick="deleteOne()"><span class="icon"><i class="fa-solid fa-delete-left" style="color: gold ;"></i></span></button>
+      <button id="button7" onclick="appendToDisplay('7')">7</button>
+      <button id="button8" onclick="appendToDisplay('8')">8</button>
+      <button id="button9" onclick="appendToDisplay('9')">9</button>
+      <button id="buttonSubtract" onclick="appendToDisplay('-')">-</button>
+      <button id="button4" onclick="appendToDisplay('4')">4</button>
+      <button id="button5" onclick="appendToDisplay('5')">5</button>
+      <button id="button6" onclick="appendToDisplay('6')">6</button>
+      <button id="buttonAdd" onclick="appendToDisplay('+')">+</button>
+      <button id="button1" onclick="appendToDisplay('1')">1</button>
+      <button id="button2" onclick="appendToDisplay('2')">2</button>
+      <button id="button3" onclick="appendToDisplay('3')">3</button>
+      <button id="buttonEqual" onclick="calculate()">=</button>
+      <button id="buttonPercentage" onclick="appendToDisplay('%')">%</button>
+      <button id="button0" onclick="appendToDisplay('0')">0</button>
+      <button id="buttondot" onclick="appendToDisplay('.')">.</button>
+     <script src="calculator.js"></script> 
+    </div>
+  </div>
+
+  </body>
+</html>
